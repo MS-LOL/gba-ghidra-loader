@@ -2,7 +2,9 @@
 This is a Ghidra Loader for GameBoy Advance ROM files.
 
 The memory areas and IO is mapped to the according addresses.
+Supervisor calls are mapped to BIOS function stubs in an overlay.
 It parses the GBA Cartridge header of the ROM and sets the entry point accordingly.
+It also provides datatypes used by the hardware and system calls.
 
 The whole technical information of the GBA is taken from and perfectly documented by [gbatek](https://problemkaputt.de/gbatek.htm).
 
